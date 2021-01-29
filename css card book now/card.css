@@ -1,0 +1,136 @@
+.bg {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(132, 186, 240, 0.1),
+    rgba(28, 95, 163, 0.5)
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.card {
+  position: relative;
+
+  height: 27rem;
+  background-color: rgba(18, 65, 112, 0.1);
+  width: 18rem;
+  display: inline-block;
+
+  margin-top: 3rem;
+  margin-left: 4rem;
+  overflow: hidden;
+}
+
+.front {
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 11%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  color: rgb(59, 56, 55);
+  /* box-decoration-break: clone; */
+}
+
+.span1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(85, 163, 236, 0.85),
+    rgba(119, 105, 248, 0.85)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.book {
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  font-size: medium;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  width: 50%;
+  display: inline-block;
+  padding: 14px 0px 14px 0px; /*top , right , bottom , left*/
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 0px;
+}
+
+.book:hover {
+  transform: scale(1.09) translateY(-4px);
+  box-shadow: 3px 5px 5px rgba(132, 186, 240, 0.9);
+}
+
+.pic {
+  background-size: cover;
+
+  height: 12rem;
+  background-blend-mode: screen;
+  border-top-left-radius: 3px;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+}
+
+.pic1 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+    url(nat-7.jpg);
+}
+
+.pic2 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+    url(nat-6.jpg);
+}
+
+.pic3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+    url(nat-5.jpg);
+}
+
+.content {
+  padding: 2 rem;
+}
+
+.content ul {
+  list-style: none;
+  margin-top: 31px;
+  margin-bottom: 1px;
+  margin-left: -15px;
+  margin-right: 1px;
+  width: 80%;
+}
+
+.content ul li {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 21px;
+  color: rgba(44, 43, 43, 0.897);
+}
+
+@media screen and (max-width: 1200px) {
+  .bg {
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(179, 148, 46, 0.1),
+      rgba(230, 226, 219, 0.5)
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .card {
+    height: 27rem;
+    background-color: rgba(18, 65, 112, 0.1);
+    width: 18rem;
+
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1.1rem;
+    overflow: hidden;
+  }
+}
